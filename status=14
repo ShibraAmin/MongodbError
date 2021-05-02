@@ -3,3 +3,5 @@ By changing the owner to monogdb user of /var/lib/mongodb and /tmp/mongodb-27017
 
 sudo chown -R mongodb:mongodb /var/lib/mongodb
 sudo chown mongodb:mongodb /tmp/mongodb-27017.sock
+sudo systemctl start mongod
+sudo service mongod status
